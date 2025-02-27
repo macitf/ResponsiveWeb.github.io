@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+}
+
+.advertisement
+{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 100px;
+	height: 200px;
+	border: 2px solid black;
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	z-index: 100;
+	margin-top: 0px;
+}
+
+.header {
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px 20px 20px 20px;
+	overflow: hidden;
+	position: relative;
+	background-color: white;
+}
+
+.logo {
+	float: left;
+	width: 200px;
+	height: auto;
+	position: relative;
+	text-align: center;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.title {
+	margin-left: 220px;
+	padding-top: 20px;
+}
+
+.title h1 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+}
+
+.title::after {
+	content: "";
+	display: none;
+}
+
+.content {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	border-top: 1px solid #ccc;
+}
+
+.image {
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ddd;
+	display: block;
+}
+
+.main {
+	display: inline;
+	text-align: justify;
+	line-height: 1.6;
+	color: #444;
+}
+
+.head {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #f8f8f8;
+	border-top: 1px solid #ccc;
+	position: relative;
+	bottom: 0;
+	color: #666;
+}
+
+@media (max-width: 768px) {
+	.header,
+	.content {
+		width: 90%;
+	}
+
+	.logo {
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.title {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.image {
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.advertisement {
+		display: none;
+	}
+}
