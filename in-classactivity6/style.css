@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 400px;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inline-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 3px ;
+    padding-bottom: 10px;
+}
